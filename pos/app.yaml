@@ -1,0 +1,19 @@
+application: copper-strand-390
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+
+- url: /
+  script: admin/index.php
+
+- url: /admin/
+
+  script: admin/login.php
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /admin/login.php
+   script: admin/login.php
